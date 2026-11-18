@@ -1,0 +1,22 @@
+{
+  "name": "hirelens",
+  "private": true,
+  "version": "0.1.0",
+  "description": "HireLens — AI-powered hiring platform (ATS + job board)",
+  "packageManager": "pnpm@10.28.0",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "typecheck": "turbo run typecheck",
+    "preview": "pnpm --filter @hirelens/web preview",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.3.0",
+    "turbo": "^2.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "@tailwindcss/oxide"]
+  }
+}
